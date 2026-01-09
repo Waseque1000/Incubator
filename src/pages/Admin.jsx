@@ -1591,7 +1591,13 @@ export default function Admin() {
                           </td>
                           <td className="px-5 py-4 whitespace-nowrap">
                             {r.needGuidelines ? (
-                              <Badge tone="green">Yes</Badge>
+                              <p className="text-red-600">
+                                {" "}
+                                {/* <Badge tone="green">Yes</Badge> */}
+                                <span class="inline-flex items-center rounded-md bg-red-600 px-2 py-1 text-xs font-medium text-white inset-ring inset-ring-red-400/20">
+                                  Yes
+                                </span>
+                              </p>
                             ) : (
                               <Badge tone="gray">No</Badge>
                             )}
